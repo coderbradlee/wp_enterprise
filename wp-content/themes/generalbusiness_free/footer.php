@@ -93,7 +93,7 @@ $word_t2=get_option('mytheme_word_t2');
   
    
  </div>
- <div class="footer_bottom" <?php echo $footer_ds;?>>
+ <!--<div class="footer_bottom" <?php echo $footer_ds;?>>
  
   <div class="footer_in">
  
@@ -102,7 +102,7 @@ $word_t2=get_option('mytheme_word_t2');
    </div>
 </div>
 
-
+-->
 
 </div>
 
