@@ -87,7 +87,7 @@ $word_t2=get_option('mytheme_word_t2');
 		   if($icp_b !=="") {echo ' |   <a rel="nofollow" target="_blank" href="http://www.miitbeian.gov.cn/">'.$icp_b.'</a>'; };  
 		   if($gongan_b !=="") {echo ' |   <a class="gonganwangb" rel="nofollow" target="_blank" href="'.$gongan_b_link.'">'.$gongan_b.'</a>'; };
 		    if($icp_b !=="") {echo ' |   <a rel="nofollow" target="_blank" href="http://www.miitbeian.gov.cn/">'.$icp_b.'</a>'; };
-		   echo ' |  技术支持： <a class="banquan" target="_blank" href="http://www.themepark.com.cn">WEB主题公园</a>'; 
+		   echo ' |  技术支持： <a class="banquan" target="_blank" href="http://www.ruomingzi.com">ruomingzi</a>'; 
 		    echo ' |  '.stripslashes(get_option('mytheme_analytics')); ?> </p>
      </div>
   
