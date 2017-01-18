@@ -11,7 +11,7 @@ $top_pic_back= 'style="background:url('.$backgroud.')"';
 
 ?>
 
-
+<!--
 <div id="page_top" <?php echo $top_pic_back; ?>>
 <?php if(is_page()): ?>
 <div class="page_top_in">
@@ -28,10 +28,9 @@ $top_pic_back= 'style="background:url('.$backgroud.')"';
    <?php    $cat = get_category_root_id(the_category_ID(false));
                    $category = get_category($cat);?>
                         
-<div> <?php echo $category->name  . ' <a>'.$category->slug.' </a>'?></div>
+ <div> <?php //echo $category->name  . ' <a>'.$category->slug.' </a>'?></div>
   
 </div>
-
 <?php elseif(is_category()): ?>
 
 <div class="page_top_in">
@@ -83,7 +82,7 @@ $top_pic_back= 'style="background:url('.$backgroud.')"';
 <?php endif; ?>
 </div>
 
-
+-->
 
 <div id="page_muen_nav"> 
 <?php if(is_single()){$id =get_the_ID();	$bbs_my_page=get_option('bbs_cat_page');$bbs_page_data = get_page($bbs_my_page );  if(get_post_meta($id,"bbs_shoppingbox", true)){
