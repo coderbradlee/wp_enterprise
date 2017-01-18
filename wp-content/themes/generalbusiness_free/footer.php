@@ -98,7 +98,7 @@ $word_t2=get_option('mytheme_word_t2');
   <div class="footer_in">
  
    <p><?php if(get_option('mytheme_footer_sm_text')){echo get_option('mytheme_footer_sm_text');}else{ echo '特别申明：';}; ?></p>
-   <!-- <?php ob_start(); wp_nav_menu(array( 'theme_location'  => "link-menu2" ,'menu_class'=> 'footer_bottom_link','container' => false  ) ); ?> -->
+    <?php ob_start(); wp_nav_menu(array( 'theme_location'  => "link-menu2" ,'menu_class'=> 'footer_bottom_link','container' => false  ) ); ?> 
    </div>
 </div>
 
