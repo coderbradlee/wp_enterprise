@@ -89,7 +89,7 @@ $word_t2=get_option('mytheme_word_t2');
 		    // if($icp_b !=="") {echo ' |   <a rel="nofollow" target="_blank" href="http://www.ruomingzi.com">'.'3'.$icp_b.'</a>'; };
 		    // echo ' |  技术支持： <a class="banquan" target="_blank" href="http://www.ruomingzi.com">ruomingzi</a>'; 
        echo ' |  1技术支持： <a class="banquan" target="_blank" href="http://www.ruomingzi.com">ruomingzi</a>'; 
-		    echo ' |  '.stripslashes(get_option('mytheme_analytics')); ?> </p>
+		    echo ' |  2'.stripslashes(get_option('mytheme_analytics')); ?> </p>
      </div>
   
    
