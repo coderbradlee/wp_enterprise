@@ -83,12 +83,12 @@ $word_t2=get_option('mytheme_word_t2');
         <?php ob_start(); wp_nav_menu(array( 'theme_location'  => "footer-menu" ,'menu_class'=> 'footer_bottom_link','container' => false  ) ); ?>
       
      
-     <p class="f_bq"> <?php  if($word_t2!=""){echo $word_t2;}else{echo '版权所有';}  ?> &copy;<?php echo date("Y"); echo " "; bloginfo('name'); 
+     <!-- <p class="f_bq"> <?php  if($word_t2!=""){echo $word_t2;}else{echo '版权所有';}  ?> &copy;<?php echo date("Y"); echo " "; bloginfo('name'); 
 		   if($icp_b !=="") {echo ' |   <a rel="nofollow" target="_blank" href="http://www.ruomingzi.com">'.$icp_b.'</a>'; };  
 		   if($gongan_b !=="") {echo ' |   <a class="gonganwangb" rel="nofollow" target="_blank" href="'.$gongan_b_link.'">'.$gongan_b.'</a>'; };
 		    // if($icp_b !=="") {echo ' |   <a rel="nofollow" target="_blank" href="http://www.ruomingzi.com">'.'3'.$icp_b.'</a>'; };
 		    echo ' |  技术支持： <a class="banquan" target="_blank" href="http://www.ruomingzi.com">ruomingzi</a>'; 
-		    echo ' |  '.stripslashes(get_option('mytheme_analytics')); ?> </p>
+		    echo ' |  '.stripslashes(get_option('mytheme_analytics')); ?> </p> -->
      </div>
   
    
