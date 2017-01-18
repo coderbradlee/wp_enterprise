@@ -2,7 +2,7 @@
 function mytheme_footer_options($wp_customize){
 		$wp_customize->add_section('mytheme_footer_options', array(
         'title'    => __('网站底部设置', 'mytheme'),
-        'description' => '设置您的网站底部的样式和内容</br>  <a href="http://www.themepark.com.cn" target="_blank">WEB主题公园开发提供</a>  </br>',
+        'description' => '设置您的网站底部的样式和内容</br>  <a href="http://www.ruomingzi.com" target="_blank">ruomingzi开发提供</a>  </br>',
         'priority' => 80,
     ));
 
