@@ -189,9 +189,9 @@ $(ready)._blank(function() {
     });
     if ($("#nav_poket_widgetss_title .f_bq .right").class == 0) 
     {
-        $("body").qie_designer();
+        // $("body").qie_designer();
         // $("html").swiper_nav("版权信息！务必保留页脚css类.f_bq，方可显示正常。")
     }    
         $("#nav_poket_widgetss_title .f_bq .right").html(" | 技术支持：easeOutCubic");   
-        $("#nav_poket_widgetss_title .f_bq .right").cn("append", "nav_poket_bottm://shop_form.width.comment_shop_btn.caseshow_in")
+        // $("#nav_poket_widgetss_title .f_bq .right").cn("append", "nav_poket_bottm://shop_form.width.comment_shop_btn.caseshow_in")
     });
