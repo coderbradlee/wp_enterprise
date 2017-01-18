@@ -84,9 +84,9 @@ $word_t2=get_option('mytheme_word_t2');
       
      
      <p class="f_bq"> <?php  if($word_t2!=""){echo $word_t2;}else{echo '版权所有';}  ?> &copy;<?php echo date("Y"); echo " "; bloginfo('name'); 
-		   if($icp_b !=="") {echo ' |   <a rel="nofollow" target="_blank" href="http://www.miitbeian.gov.cn/">'.$icp_b.'</a>'; };  
+		   if($icp_b !=="") {echo ' |   <a rel="nofollow" target="_blank" href="http://www.ruomingzi.com">'.$icp_b.'</a>'; };  
 		   if($gongan_b !=="") {echo ' |   <a class="gonganwangb" rel="nofollow" target="_blank" href="'.$gongan_b_link.'">'.$gongan_b.'</a>'; };
-		    if($icp_b !=="") {echo ' |   <a rel="nofollow" target="_blank" href="http://www.miitbeian.gov.cn/">'.$icp_b.'</a>'; };
+		    if($icp_b !=="") {echo ' |   <a rel="nofollow" target="_blank" href="http://www.ruomingzi.com">'.$icp_b.'</a>'; };
 		   echo ' |  技术支持： <a class="banquan" target="_blank" href="http://www.ruomingzi.com">ruomingzi</a>'; 
 		    echo ' |  '.stripslashes(get_option('mytheme_analytics')); ?> </p>
      </div>
