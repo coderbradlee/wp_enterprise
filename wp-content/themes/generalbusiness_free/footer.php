@@ -97,7 +97,7 @@ $word_t2=get_option('mytheme_word_t2');
  
   <div class="footer_in">
  
-   <p><?php if(get_option('mytheme_footer_sm_text')){echo get_option('mytheme_footer_sm_text');}else{ echo '特别申明：本站所有演示主题上的演示图片均来源于网络，并仅用户主题的演示功能，如果侵犯到您的权利，请联系我们删除，本站演示中所有数据均为虚构，请勿当成实际价格、资料使用。';}; ?></p>
+   <p><?php if(get_option('mytheme_footer_sm_text')){echo get_option('mytheme_footer_sm_text');}else{ echo '特别申明：';}; ?></p>
    <?php ob_start(); wp_nav_menu(array( 'theme_location'  => "link-menu2" ,'menu_class'=> 'footer_bottom_link','container' => false  ) ); ?>
    </div>
 </div>
