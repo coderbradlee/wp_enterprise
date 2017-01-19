@@ -22,8 +22,7 @@ ul,li,ol{ list-style:none; }
 .menu_nav ul li.menu-item-has-children a{ width:150px;}
 .menu_nav ul li .hover{ width:50px; height:25px; padding:10px 0; position:absolute; z-index:9; top:0; right:0; background:#202020; font-size:18px; color:#FFF; display:block;}
 .menu_nav ul li a{ font-size:14px; color:#FFF; line-height:25px; text-decoration:none; display:block; width:100%; height:25px; padding:10px 0;}
-#.menu_nav ul.sub-menu{ display:none; width:100%; background:#202020; box-shadow:0 0 5px #000 inset;    }
-.menu_nav ul.sub-menu{ display:none; width:70%; background:#000000; box-shadow:0 0 5px #000 inset;    }
+.menu_nav ul.sub-menu{ display:none; width:100%; background:#202020; box-shadow:0 0 5px #000 inset;    }
 .menu_nav .current-menu-item,.menu_nav  .current-category-ancestor,.menu_nav  .current-menu-ancestor,.menu_nav  .current-post-parent{ box-shadow:0 0 10px #0C0C0C inset; width:198px; border-left:solid #6C0 2px; }
 #index_ara{ margin-top:50px;}
 .hedet{ width:100%; height:300px; float:left; }

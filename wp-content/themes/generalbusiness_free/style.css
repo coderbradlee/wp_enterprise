@@ -66,7 +66,7 @@ b a,h2 a{ color:#333;}
 #header_pic_nav  li div{ font-size:14px; color:#fff; font-weight:normal; line-height:17px;}
 #header_pic_nav  li p{ font-size:10px; color:#fff;text-transform : uppercase}
 
-#header_pic_nav  li .sub-menu{ position:absolute; top:60px; left:0; background:#FFF; width:250px; z-index:10; border:1px solid #f4f4f4; display:none;}
+#header_pic_nav  li .sub-menu{ position:absolute; top:60px; left:0; background:#15839f; width:100%; z-index:10; border:1px solid #da5555; display:none;}
 .header_down #header_pic_nav  li .sub-menu li a span div,.header_down #header_pic_nav  li .sub-menu li a span p{ color:#333;}
 #header_pic_nav  li.youbian .sub-menu{ right:0; left:inherit !important;}
 #header_pic_nav  li .sub-menu li{ padding:0; width:100%;border-left:1px solid #f4f4f4;}
