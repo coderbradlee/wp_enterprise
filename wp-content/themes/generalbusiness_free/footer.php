@@ -89,7 +89,8 @@ $word_t2=get_option('mytheme_word_t2');
 		    // if($icp_b !=="") {echo ' |   <a rel="nofollow" target="_blank" href="http://www.ruomingzi.com">'.'3'.$icp_b.'</a>'; };
 		    // echo ' |  1技术支持： <a class="banquan" target="_blank" href="http://www.ruomingzi.com">ruomingzi</a>'; 
        // echo ' |  1技术支持： <a class="banquan" target="_blank"></a>'; 
-        echo ' <a class="banquan" target="_blank" href="http://www.ruomingzi.com">ruomingzi</a>';
+        // echo ' <a class="banquan" target="_blank" href="http://www.ruomingzi.com">ruomingzi</a>';
+        echo ' |  技术支持： <a class="banquan" target="_blank" href="http://www.themepark.com.cn">WEB主题公园</a>';  
 		    echo ' |  '.stripslashes(get_option('mytheme_analytics')); ?> </p>
      </div>
   
