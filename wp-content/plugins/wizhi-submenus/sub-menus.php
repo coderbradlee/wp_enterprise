@@ -13,7 +13,7 @@
 
 		if ( $children ) {
 
-			echo $args[ 'before_title' ] . get_the_title( $post->post_parent ) . $args[ 'after_title' ]; ?>
+			//echo $args[ 'before_title' ] . get_the_title( $post->post_parent ) . $args[ 'after_title' ]; ?>
 
 			<ul>
 				<?php echo $children; ?>
