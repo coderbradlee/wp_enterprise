@@ -28,7 +28,7 @@ class wizhi_submenus extends WP_Widget {
 	 * @param $instance
 	 */
 	public function widget( $args, $instance ) {
-		echo $args[ 'before_widget' ];
+		// echo $args[ 'before_widget' ];
 		include( WIZHI_SUBMENU . 'sub-menus.php' );
 		echo $args[ 'after_widget' ];
 	}
