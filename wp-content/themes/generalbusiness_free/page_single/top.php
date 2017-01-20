@@ -12,7 +12,7 @@ $top_pic_back= 'style="background:url('.$backgroud.')"';
 ?>
 
 
-<div id="page_top" <?php echo $top_pic_back; ?>>
+<!-- <div id="page_top" <?php echo $top_pic_back; ?>>
 <?php if(is_page()): ?>
 <div class="page_top_in">
   <?php     $post_data = get_post($post->ID, ARRAY_A);
@@ -83,7 +83,7 @@ $top_pic_back= 'style="background:url('.$backgroud.')"';
 <?php endif; ?>
 </div>
 
-
+ -->
 
 <div id="page_muen_nav"> 
 <?php if(is_single()){$id =get_the_ID();	$bbs_my_page=get_option('bbs_cat_page');$bbs_page_data = get_page($bbs_my_page );  if(get_post_meta($id,"bbs_shoppingbox", true)){
