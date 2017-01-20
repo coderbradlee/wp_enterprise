@@ -142,7 +142,7 @@ ob_start();
 		if($ii==0){echo '<strong>'.get_option('mytheme_ad_top').'</strong>';}
 		else{echo '<marquee  scrollamount=2 scrolldelay=30 direction= left onMouseOut=this.start(); onMouseOver=this.stop(); align="left" width=504 height=34><div class="top_lunbo">'.$gonggaos.'</div></marquee>';}
 		
-		}else{echo '<strong>ruomingzi[www.ruomingzi.com]!</strong>';}} ?>
+		}else{echo '<strong>WEB主题公园[www.themepark.com.cn]用心做最好的原创中文WordPress主题!</strong>';}} ?>
 			 
 			 <div class="language_drop">
               <?php if($language_link1){ ?>

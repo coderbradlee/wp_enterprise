@@ -116,7 +116,7 @@ function mytheme_page (){
 		'case',
 
 		'email',
-		'ruomingzi',
+		'themepark',
 		'icp_b',
 		'word_t1',
 		'word_t2',

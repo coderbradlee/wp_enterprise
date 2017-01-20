@@ -2,7 +2,7 @@
 function mytheme_header_options($wp_customize){
 		$wp_customize->add_section('mytheme_header_options', array(
         'title'    => __('网站顶部设置', 'mytheme'),
-        'description' => '通过这个选项设置顶部的样式和内容</br>  <a href="http://www.ruomingzi.com" target="_blank">ruomingzi开发提供</a>',
+        'description' => '通过这个选项设置顶部的样式和内容</br>  <a href="http://www.themepark.com.cn" target="_blank">WEB主题公园开发提供</a>',
         'priority' => 60,
     ));
 
@@ -107,7 +107,7 @@ $wp_customize->add_setting('mytheme_tell2', array(
   
 
  $wp_customize->add_setting('mytheme_ad_top', array(
-        'default'        => 'ruomingzi[www.ruomingzi.com]',
+        'default'        => 'WEB主题公园[www.themepark.com.cn]用心做最好的原创中文WordPress主题!',
         'capability'     => 'edit_theme_options',
         'type'           => 'option',
  

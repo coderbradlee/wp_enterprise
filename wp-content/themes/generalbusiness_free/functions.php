@@ -26,7 +26,7 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
       require 'theme-updates/theme-update-checker.php';
 	    $example_update_checker = new ThemeUpdateChecker(	
 		  'generalbusiness_free', 
-         'http://www.ruomingzi.com'  
+         'http://www.themepark.com.cn/'  
 );
 
 function shoppingbox_theme_support() {
