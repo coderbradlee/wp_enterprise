@@ -1,10 +1,10 @@
 <?php
 /*
-  Plugin Name: 小工具/自定义排版导入导出备份工具
-  Description: 一个可以将你的小工具数据进行导入导出的工具，WEB主题公园（http://www.themepark.com.cn）提供汉化，版权归作者 Kevin Langley, Sean McCafferty, Mark Parolisi所有。
+  Plugin Name: Widget Data - Setting Import/Export Plugin
+  Description: Adds functionality to export and import widget data
   Author: Voce Communications - Kevin Langley, Sean McCafferty, Mark Parolisi
   Author URI: http://vocecommunications.com
-  Version: 1.5.0
+  Version: 1.5.1
  * ******************************************************************
   Copyright 2011-2011 Voce Communications
 

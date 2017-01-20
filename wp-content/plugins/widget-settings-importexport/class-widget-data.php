@@ -19,12 +19,15 @@ class Widget_Data {
 
 	private static function clear_widgets() {
 		$sidebars = wp_get_sidebars_widgets();
-		$inactive = isset($sidebars['wp_inactive_widgets']) ? $sidebars['wp_inactive_widgets'] : array();
+		$inactive = isset($sidebars['wp_inactive_widgets']) && is_array( $sidebars['wp_inactive_widgets'] ) ? $sidebars['wp_inactive_widgets'] : array();
 
 		unset($sidebars['wp_inactive_widgets']);
 
 		foreach ( $sidebars as $sidebar => $widgets ) {
-			$inactive = array_merge($inactive, $widgets);
+			if( is_array( $widgets ) ){
+				$inactive = array_merge($inactive, $widgets);
+			}
+
 			$sidebars[$sidebar] = array();
 		}
 
@@ -37,9 +40,9 @@ class Widget_Data {
 	 */
 	public static function add_admin_menus() {
 		//import
-		self::$import_page = add_management_page( 'Widget Settings Import', '小工具导入', 'manage_options', 'widget-settings-import', array( __CLASS__, 'import_settings_page' ) );
+		self::$import_page = add_management_page( 'Widget Settings Import', 'Widget Settings Import', 'manage_options', 'widget-settings-import', array( __CLASS__, 'import_settings_page' ) );
 		// export
-		self::$export_page = add_management_page( 'Widget Settings Export', '小工具导出', 'manage_options', 'widget-settings-export', array( __CLASS__, 'export_settings_page' ) );
+		self::$export_page = add_management_page( 'Widget Settings Export', 'Widget Settings Export', 'manage_options', 'widget-settings-export', array( __CLASS__, 'export_settings_page' ) );
 
 		add_action( 'admin_enqueue_scripts', array( __CLASS__, 'enqueue_admin_scripts' ) );
 	}
@@ -67,11 +70,11 @@ class Widget_Data {
 					<input type="hidden" id="action" name="action" value="export_widget_settings" />
 					<?php wp_nonce_field('export_widget_settings', '_wpnonce'); ?>
 					<p>
-						<a class="button select-all">全选所有需要导入的小工具</a>
-						<a class="button unselect-all">反选</a>
+						<a class="button select-all">Select All Active Widgets</a>
+						<a class="button unselect-all">Un-Select All Active Widgets</a>
 					</p>
 					<div class="title">
-						<h3>所有的小工具</h3>
+						<h3>Sidebars</h3>
 						<div class="clear"></div>
 					</div>
 					<div class="sidebars">
@@ -110,7 +113,7 @@ class Widget_Data {
 							<?php endif;
 						endforeach; ?>
 					</div> <!-- end sidebars -->
-					<input class="button-bottom button-primary" type="submit" value="开始导出数据"/>
+					<input class="button-bottom button-primary" type="submit" value="Export Widget Settings"/>
 				</form>
 			</div> <!-- end wrap -->
 		</div> <!-- end export-widget-settings -->
@@ -125,13 +128,13 @@ class Widget_Data {
 		?>
 		<div class="widget-data import-widget-settings">
 			<div class="wrap">
-				<h2>小工具导入工具</h2>
+				<h2>Widget Setting Import</h2>
 				<?php if ( isset( $_FILES['widget-upload-file'] ) ) : ?>
 					<div id="notifier" style="display: none;"></div>
 					<div class="import-wrapper">
 						<p>
-							<a class="button select-all">全选所有需要导入的小工具</a>
-							<a class="button unselect-all">反选</a>
+							<a class="button select-all">Select All Active Widgets</a>
+							<a class="button unselect-all">Un-Select All Active Widgets</a>
 						</p>
 						<form action="" id="import-widget-data" method="post">
 							<?php wp_nonce_field('import_widget_data', '_wpnonce');
@@ -149,8 +152,8 @@ class Widget_Data {
 							<input type="hidden" name="import_file" value="<?php echo esc_attr( $json_file ); ?>"/>
 							<input type="hidden" name="action" value="import_widget_data"/>
 							<div class="title">
-								<p class="widget-selection-error">请勾选下面所需要导入的小工具.</p>
-								<h3>所有的小工具</h3>
+								<p class="widget-selection-error">Please select a widget to continue.</p>
+								<h3>Sidebars</h3>
 								<div class="clear"></div>
 							</div>
 							<div class="sidebars">
@@ -203,21 +206,21 @@ class Widget_Data {
 							</div> <!-- end sidebars -->
 							<p>
 								<input type="checkbox" name="clear_current" id="clear-current" checked=checked value="true" />
-								<label for="clear-current">在导入之前清除当前现有的数据</label><br/>
-								<span class="description">请注意：勾选之后当前所有项目将会停用（放入“未使用的小工具”）而替换导入的文件</span>
+								<label for="clear-current">Clear Current Widgets Before Import</label><br/>
+								<span class="description">All active widgets will be moved to inactive</span>
 							</p>
-							<input class="button-bottom button-primary" type="submit" name="import-widgets" id="import-widgets" value="开始导入数据" />
+							<input class="button-bottom button-primary" type="submit" name="import-widgets" id="import-widgets" value="Import Widget Settings" />
 						</form>
 					</div>
 				<?php else : ?>
 					<form action="" id="upload-widget-data" method="post" enctype="multipart/form-data">
-						<p>请选择你的导出文件进行导入</p>
+						<p>Select the file that contains widget settings</p>
 						<p>
 							<input type="text" disabled="disabled" class="file-name regular-text" />
-							<a id="upload-button" class="button upload-button">点击选择文件</a>
+							<a id="upload-button" class="button upload-button">Select a file</a>
 							<input type="file" name="widget-upload-file" id="widget-upload-file" size="40" style="display:none;" />
 						</p>
-						<input type="submit" name="button-upload-submit" id="button-upload-submit" class="button" value="显示导入文件中所有的数据选项" />
+						<input type="submit" name="button-upload-submit" id="button-upload-submit" class="button" value="Show Widget Settings" />
 					</form>
 				<?php endif; ?>
 			</div> <!-- end wrap -->
@@ -465,7 +468,7 @@ class Widget_Data {
 
 		//since wp_inactive_widget is only used in widgets.php
 		if ( $sidebar_id == 'wp_inactive_widgets' )
-			return array( 'name' => '未使用的小工具', 'id' => 'wp_inactive_widgets' );
+			return array( 'name' => 'Inactive Widgets', 'id' => 'wp_inactive_widgets' );
 
 		foreach ( $wp_registered_sidebars as $sidebar ) {
 			if ( isset( $sidebar['id'] ) && $sidebar['id'] == $sidebar_id )

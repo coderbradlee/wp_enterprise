@@ -4,7 +4,7 @@ Theme URI:http://www.themepark.com.cn/
 Description: WEB主题公园所出品的一款swiper框架主题，对移动设备的运行非常流畅，并且兼容web主题公园所出品的购物盒子WordPress插件，可以建立一个带有购物车、小型论坛、qq登录和本地化留言框等强大功能的主题。
 Author:WEB主题公园
 Author URI: http://www.themepark.com.cn/
-Version: 1.01
+Version: 1.02
 */
 
 * {margin: 0;padding: 0}
@@ -66,7 +66,7 @@ b a,h2 a{ color:#333;}
 #header_pic_nav  li div{ font-size:14px; color:#fff; font-weight:normal; line-height:17px;}
 #header_pic_nav  li p{ font-size:10px; color:#fff;text-transform : uppercase}
 
-#header_pic_nav  li .sub-menu{ position:absolute; top:60px; left:0; background:#15839f; width:100%; z-index:10; border:1px solid #da5555; display:none;}
+#header_pic_nav  li .sub-menu{ position:absolute; top:60px; left:0; background:#FFF; width:250px; z-index:10; border:1px solid #f4f4f4; display:none;}
 .header_down #header_pic_nav  li .sub-menu li a span div,.header_down #header_pic_nav  li .sub-menu li a span p{ color:#333;}
 #header_pic_nav  li.youbian .sub-menu{ right:0; left:inherit !important;}
 #header_pic_nav  li .sub-menu li{ padding:0; width:100%;border-left:1px solid #f4f4f4;}
