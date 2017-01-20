@@ -24,7 +24,7 @@ $word_t2=get_option('mytheme_word_t2');
  
    <a target="_blank" href="<?php echo get_option('mytheme_footer_box2_link') ?>" class="about_pic"><img src="<?php echo $footer_box2_pic;?>"  <?php echo 'alt="'.get_option('mytheme_footer_box2_title').'"'; ?>/></a>
    
-   <p class="about_text"><?php if(get_option('mytheme_footer_box2_text')){echo get_option('mytheme_footer_box2_text');}else{echo 'WEB主题公园是秉自长沙特锐文化传播有限公司，我们的团队倾力打造的一个以网页模板，网页主题为核心的商务平台。我们有着经验丰富，而且成熟的团队，我们专注于开发视觉精美，功能完善的原创中文网站主题和网站模板。';} ?></p>
+   <p class="about_text"><?php if(get_option('mytheme_footer_box2_text')){echo get_option('mytheme_footer_box2_text');}else{echo '可以写公司的简短介绍';} ?></p>
    
   </div>
 
@@ -73,7 +73,7 @@ $word_t2=get_option('mytheme_word_t2');
 			 for($i=0;$i<count($contact_text);$i++) {
 				 echo'<p class="contact_text_p">'.$contact_text[$i].'</p>';
 				 
-				 } }else{echo '<p class="contact_text_p">联系电话:0731 -8578 ****  / 0731-8578 **** </p><p class="contact_text_p">联系邮箱：themepark.com.cn</p><p class="contact_text_p"> 联系邮箱：湖南省长沙市雨花区芙蓉中路296号交通大厦A座2902号</p>';} 
+				 } }else{echo '<p class="contact_text_p">联系电话:021-**** </p><p class="contact_text_p">联系邮箱：lzxm160@sina.com</p><p class="contact_text_p"> 联系地址：</p>';} 
 	 
 	 ?>
    
@@ -97,7 +97,7 @@ $word_t2=get_option('mytheme_word_t2');
  
   <div class="footer_in">
  
-   <p><?php if(get_option('mytheme_footer_sm_text')){echo get_option('mytheme_footer_sm_text');}else{ echo '特别申明：本站所有演示主题上的演示图片均来源于网络，并仅用户主题的演示功能，如果侵犯到您的权利，请联系我们删除，本站演示中所有数据均为虚构，请勿当成实际价格、资料使用。';}; ?></p>
+   <p><?php if(get_option('mytheme_footer_sm_text')){echo get_option('mytheme_footer_sm_text');}else{ echo '特别申明：本站所有的演示图片均来源于网络，如果侵犯到您的权利，请联系我们删除，本站演示中所有数据均为虚构，请勿当成实际价格、资料使用。';}; ?></p>
    <?php ob_start(); wp_nav_menu(array( 'theme_location'  => "link-menu2" ,'menu_class'=> 'footer_bottom_link','container' => false  ) ); ?>
    </div>
 </div>
