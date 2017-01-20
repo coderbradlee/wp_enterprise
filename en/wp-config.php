@@ -24,7 +24,7 @@ define('ALLOW_UNFILTERED_UPLOADS', true);
 define('DB_NAME', 'VScjMVd2en');
 
 /** MySQL数据库用户名 */
-define('DB_USER', 'VScjMVd2');
+define('DB_USER', 'VScjMVd2en');
 
 /** MySQL数据库密码 */
 define('DB_PASSWORD', 'C7DrOtT9w8Ct');
